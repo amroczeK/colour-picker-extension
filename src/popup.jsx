@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function Popup() {
   const [currentColour, setCurrentColour] = useState("#FFF");
@@ -10,7 +11,7 @@ function Popup() {
   };
 
   return (
-    <div>
+    <div className="bg-red-600 w-full h-full">
       <h1>Color Picker Chrome Extension</h1>
       <div>
         <input
@@ -20,7 +21,9 @@ function Popup() {
           value={currentColour}
           onChange={onColourChange}
         />
-        <label htmlFor="current-colour">{currentColour}</label>
+        <label htmlFor="current-colour" className=" text-red-700">
+          {currentColour}
+        </label>
       </div>
     </div>
   );
