@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+th {
+  width: 6ch;
+}
+
+th,
+tr {
+  text-align: left;
+}
+td {
+  text-align: right;
+}
+
+tr > td:last-of-type {
+  display: flex;
+  padding: 0.25em;
+}
+
+.main-container {
+  width: intrinsic; /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content; /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+  width: max-content;
+}
