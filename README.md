@@ -4,6 +4,11 @@ Simple Colour Picker Chrome extension developed with ReactJs, TailwindCSS, bundl
 
 The extension is using Manifest Version 3.
 
+## Showcase
+
+![Alt text](./assets/picker-2.png?raw=true 'Colour picker popup')
+![Alt text](./assets/picker-1.png?raw=true 'Colour picking') 
+
 ## Available Scripts
 
 In the project directory, you can run:
